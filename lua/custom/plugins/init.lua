@@ -5,4 +5,17 @@
 
 ---@module 'lazy'
 ---@type LazySpec
-return {}
+return {
+  {
+    'akinsho/toggleterm.nvim',
+    version = '*',
+    keys = {
+      { '<C-`>', '<cmd>ToggleTerm direction=horizontal<cr>', desc = 'Toggle terminal' },
+    },
+    opts = {
+      size = 15,
+      direction = 'horizontal',
+      shade_terminals = true,
+    },
+  },
+}
